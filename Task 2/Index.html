@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adopt a Pet</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <h1>🐶 Adopt a Pet 🐱</h1>
+      <p>Give a loving home to a furry friend!</p>
+    </header>
+
+    <div class="grid">
+      <!-- Adoption Form -->
+      <section class="form-section">
+        <h2>Pet Adoption Form</h2>
+        <form id="adoptForm">
+          <input type="text" id="adopterName" placeholder="Your Name" required />
+          <input type="email" id="adopterEmail" placeholder="Your Email" required />
+          <select id="petChoice">
+            <option value="">Select a Pet</option>
+            <option value="Bella (Dog)">Bella (Dog)</option>
+            <option value="Luna (Cat)">Luna (Cat)</option>
+            <option value="Charlie (Dog)">Charlie (Dog)</option>
+          </select>
+          <button type="submit">Apply Now</button>
+        </form>
+        <p id="formMsg"></p>
+      </section>
+
+      <!-- Pet Gallery -->
+      <section class="gallery-section">
+        <h2>Adoptable Pets</h2>
+        <div id="petGallery" class="gallery"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
